@@ -29,13 +29,18 @@ public class location : MonoBehaviour
         {
             Vector2 spawnPosition = new Vector2(23.74f, -8.64f);
             GameObject newLocation = Instantiate(roomPrefabs[0], spawnPosition, Quaternion.identity);
-                      
+
         }
         else if (randomIndex == 1)
         {
             Vector2 spawnPosition = new Vector2(95.5f, -54.76f);
             GameObject newLocation = Instantiate(roomPrefabs[1], spawnPosition, Quaternion.identity);
-         
+
+        }
+        else if (randomIndex == 2)
+        {
+            Vector2 spawnPosition = new Vector2(-107.76f, -6.27f);
+            GameObject newLocation = Instantiate(roomPrefabs[2], spawnPosition, Quaternion.identity);
         }
     }
 }
