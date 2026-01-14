@@ -5,7 +5,10 @@ using UnityEngine;
 public class location : MonoBehaviour
 {
     public GameObject[] roomPrefabs;
-    
+    public GameObject[] roomPrefabs0;
+    public GameObject[] roomPrefabs1;
+    public GameObject[] roomPrefabs2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,20 +30,69 @@ public class location : MonoBehaviour
 
         if (randomIndex == 0)
         {
-            Vector2 spawnPosition = new Vector2(23.74f, -8.64f);
-            GameObject newLocation = Instantiate(roomPrefabs[0], spawnPosition, Quaternion.identity);
-
+            spawn0();
+           
         }
         else if (randomIndex == 1)
         {
-            Vector2 spawnPosition = new Vector2(95.5f, -54.76f);
-            GameObject newLocation = Instantiate(roomPrefabs[1], spawnPosition, Quaternion.identity);
+            spawn1();
 
         }
         else if (randomIndex == 2)
         {
-            Vector2 spawnPosition = new Vector2(-107.76f, -6.27f);
-            GameObject newLocation = Instantiate(roomPrefabs[2], spawnPosition, Quaternion.identity);
+            spawn2();
         }
     }
+    void spawn0()
+    {
+        Vector2 spawnPosition = new Vector2(23.74f, -8.64f);
+        GameObject newLocation = Instantiate(roomPrefabs[0], spawnPosition, Quaternion.identity);
+        int randomIndex0 = Random.Range(0, roomPrefabs0.Length);
+        if (randomIndex0 == 0)
+        {
+            Vector2 spawnPosition1 = new Vector2(171.51f,-35.51f);
+            GameObject newLocatio1 = Instantiate(roomPrefabs0[0], spawnPosition1, Quaternion.identity);
+
+        }
+        else if (randomIndex0 == 1)
+        {
+            Vector2 spawnPosition1 = new Vector2(-31.81f,12.99f);
+            GameObject newLocation1 = Instantiate(roomPrefabs0[1], spawnPosition1, Quaternion.identity);
+        }
+    }
+    void spawn1()
+    {
+        Vector2 spawnPosition = new Vector2(95.5f, -54.76f);
+        GameObject newLocation = Instantiate(roomPrefabs[1], spawnPosition, Quaternion.identity);
+        int randomIndex0 = Random.Range(0, roomPrefabs1.Length);
+        if (randomIndex0 == 0)
+        {
+            Vector2 spawnPosition1 = new Vector2(95.39f,-10.17f);
+            GameObject newLocation1 = Instantiate(roomPrefabs1[0], spawnPosition1, Quaternion.identity);
+
+        }
+        else if (randomIndex0 == 1)
+        {
+            Vector2 spawnPosition1 = new Vector2(-36.1f,-7.76f);
+            GameObject newLocation1 = Instantiate(roomPrefabs1[1], spawnPosition1, Quaternion.identity);
+        }
+    }
+    void spawn2()
+    {
+        Vector2 spawnPosition = new Vector2(-107.76f, -6.27f);
+        GameObject newLocation = Instantiate(roomPrefabs[2], spawnPosition, Quaternion.identity);
+        int randomIndex0 = Random.Range(0, roomPrefabs2.Length);
+        if (randomIndex0 == 0)
+        {
+            Vector2 spawnPosition1 = new Vector2(94.93f,5.11f);
+            GameObject newLocation1 = Instantiate(roomPrefabs2[0], spawnPosition1, Quaternion.identity);
+
+        }
+        else if (randomIndex0 == 1)
+        {
+            Vector2 spawnPosition1 = new Vector2(166.7f, -41.02f);
+            GameObject newLocatio1 = Instantiate(roomPrefabs2[1], spawnPosition1, Quaternion.identity);
+        }
+    }
+
 }
