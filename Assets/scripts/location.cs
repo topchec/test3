@@ -40,7 +40,7 @@ public class location : MonoBehaviour
         }
         else if (randomIndex == 2)
         {
-            spawn2();
+             spawn2();
         }
     }
     void spawn0()
@@ -52,12 +52,15 @@ public class location : MonoBehaviour
         {
             Vector2 spawnPosition1 = new Vector2(171.51f,-35.51f);
             GameObject newLocatio1 = Instantiate(roomPrefabs0[0], spawnPosition1, Quaternion.identity);
-
+            Vector2 spawnPosition2 = new Vector2(39.9f,11.47f);
+            GameObject newLocation2 = Instantiate(roomPrefabs0[1], spawnPosition2, Quaternion.identity);
         }
         else if (randomIndex0 == 1)
         {
             Vector2 spawnPosition1 = new Vector2(-31.81f,12.99f);
             GameObject newLocation1 = Instantiate(roomPrefabs0[1], spawnPosition1, Quaternion.identity);
+            Vector2 spawnPosition2 = new Vector2(242.55f,-21.76f);
+            GameObject newLocation2 = Instantiate(roomPrefabs0[0], spawnPosition2, Quaternion.identity);
         }
     }
     void spawn1()
@@ -69,12 +72,15 @@ public class location : MonoBehaviour
         {
             Vector2 spawnPosition1 = new Vector2(95.39f,-10.17f);
             GameObject newLocation1 = Instantiate(roomPrefabs1[0], spawnPosition1, Quaternion.identity);
-
+            Vector2 spawnPosition2 = new Vector2(39.84f,11.45f);
+            GameObject newLocation2 = Instantiate(roomPrefabs1[1], spawnPosition2, Quaternion.identity);
         }
         else if (randomIndex0 == 1)
         {
             Vector2 spawnPosition1 = new Vector2(-36.1f,-7.76f);
             GameObject newLocation1 = Instantiate(roomPrefabs1[1], spawnPosition1, Quaternion.identity);
+            Vector2 spawnPosition2 = new Vector2(166.54f,3.63f);
+            GameObject newLocation2 = Instantiate(roomPrefabs1[0], spawnPosition2, Quaternion.identity);
         }
     }
     void spawn2()
@@ -86,12 +92,15 @@ public class location : MonoBehaviour
         {
             Vector2 spawnPosition1 = new Vector2(94.93f,5.11f);
             GameObject newLocation1 = Instantiate(roomPrefabs2[0], spawnPosition1, Quaternion.identity);
-
+            Vector2 spawnPosition2 = new Vector2(242.7f,-21.76f);
+            GameObject newLocation2 = Instantiate(roomPrefabs2[1], spawnPosition2, Quaternion.identity);
         }
         else if (randomIndex0 == 1)
         {
             Vector2 spawnPosition1 = new Vector2(166.7f, -41.02f);
             GameObject newLocatio1 = Instantiate(roomPrefabs2[1], spawnPosition1, Quaternion.identity);
+            Vector2 spawnPosition2 = new Vector2(166.5f,3.58f);
+            GameObject newLocation2 = Instantiate(roomPrefabs2[0], spawnPosition2, Quaternion.identity);
         }
     }
 
